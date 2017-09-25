@@ -19,7 +19,6 @@ class ParentComponent extends Component {
   }
   handleSubmit = (event) => {
     event.preventDefault();
-    console.log("Submit fired");
     //set the state for props and for value (prevents output from appearing when typing)
     this.setState({whatToSay: this.state.whatToSay, whatWasSaid: this.state.whatToSay});
     //clear our input by resetting state
@@ -28,10 +27,10 @@ class ParentComponent extends Component {
   }
   render() {
     return (
-      <div>
-        <div>
+      <div className="container">
+        <div className="form-group">
           <form onSubmit={this.handleSubmit}>
-            <input type="text" onChange={this.handleInput} placeholder="Say It, Don't Spray It!" />
+            <input type="text" className="form-control" onChange={this.handleInput} placeholder="Say It, Don't Spray It!" />
           </form>
         </div>
         <div>

@@ -3,7 +3,11 @@ import React, {Component} from 'react'
 class DisplayComponent extends Component {
   render() {
     return (
-      <div>{this.props.sayWhat}</div>
+      <div className="container">
+        <div className="card-block">
+          {this.props.sayWhat}
+        </div>
+      </div>
     );
   }
 }

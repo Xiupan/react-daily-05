@@ -3,7 +3,9 @@ import React, {Component} from 'react'
 class Header extends Component {
   render() {
     return (
-      <nav>NavBar</nav>
+      <nav className="navbar navbar-light bg-faded">
+        NavBar
+      </nav>
     );
   }
 }

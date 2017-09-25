@@ -3,7 +3,9 @@ import React, {Component} from 'react'
 class Footer extends Component {
   render() {
     return (
-      <footer>Footer</footer>
+      <footer className="navbar navbar-light bg-faded">
+        Footer
+      </footer>
     );
   }
 }
